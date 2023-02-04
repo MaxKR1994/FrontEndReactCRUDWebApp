@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import axios from "axios";
 
 export default function Home() {
-  const [users, setUsers] = useState([]);
+  const [users, setUser] = useState([]);
 
   useEffect(() => {
     loadUsers();
@@ -10,7 +10,7 @@ export default function Home() {
 
   const loadUsers = async () => {
     const result = await axios.get("http://localhost:8080/users");
-    setUsers(result.data);
+    setUser(result.data);
   };
 
   return (
