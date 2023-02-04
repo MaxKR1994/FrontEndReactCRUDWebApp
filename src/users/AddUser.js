@@ -7,11 +7,11 @@ export default function AddUser() {
 
   const [user, setUser] = useState({
     name: "",
-    username: "",
+    userName: "",
     email: "",
   });
 
-  const { name, username, email } = user;
+  const { name, userName, email } = user;
 
   const onInputChange = (e) => {
     setUser({ ...user, [e.target.name]: e.target.value });
@@ -51,8 +51,8 @@ export default function AddUser() {
                 type={"text"}
                 className="form-control"
                 placeholder="Enter your username"
-                name="username"
-                value={username}
+                name="userName"
+                value={userName}
                 onChange={(e) => onInputChange(e)}
               />
             </div>
