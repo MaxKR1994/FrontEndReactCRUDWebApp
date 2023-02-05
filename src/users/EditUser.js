@@ -9,7 +9,7 @@ export default function EditUser() {
 
   const [user, setUser] = useState({
     name: "",
-    username: "",
+    userName: "",
     email: "",
   });
 
@@ -55,7 +55,7 @@ export default function EditUser() {
               />
             </div>
             <div className="mb-3">
-              <label htmlFor="Username" className="form-label">
+              <label htmlFor="userName" className="form-label">
                 Username
               </label>
               <input
